@@ -16,7 +16,7 @@ def pytest_addoption(parser):
 
     add_option(
         option="--qatouch",
-        action="store_true",
+        action="store",
         dest="qatouch",
         default="False",
         help="Enable the qatouch plugin (Set ['True', 'False'])",
@@ -92,7 +92,8 @@ def pytest_runtest_makereport(item, call):
 
 
 def pytest_sessionfinish():
-    __QATOUCH_TEST_RSESULT.push_results_to_qatouch()
+    if __QATOUCH_TEST_RSESULT:
+        __QATOUCH_TEST_RSESULT.push_results_to_qatouch()
 
 
 def __add_test(qa_marker, test_result):
