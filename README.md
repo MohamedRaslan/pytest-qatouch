@@ -4,13 +4,13 @@ Pytest plugin for uploading test results to your QA Touch Testrun.
 
 ## Features
 
-- TODO
+- It only will upload the test results to the specified testrun in your Qatouch portal
+
+pytest-plugin testrail pytest-pytestrail
 
 ## Installation
 
-- TODO
-
-You can install "pytest-pyqatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project)**::
+You can install "pytest-pyqatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-pyqatouch/)**::
 
 ```shell
 pip install pytest-pytestrail
