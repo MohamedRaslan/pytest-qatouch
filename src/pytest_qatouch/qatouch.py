@@ -40,7 +40,7 @@ class QatouchTestResult:
             "comments": "Status changed by pytest-qatouch plugin.",
             "result": json.dumps(self.results),
         }
-        print(json.dumps(self.results))
+
         response = requests.patch(
             request_url, headers=request_headers, params=request_payload
         )
