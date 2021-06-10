@@ -10,7 +10,7 @@ pytest-plugin testrail pytest-pytestrail
 
 ## Installation
 
-You can install "pytest-pyqatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-pyqatouch/)**::
+You can install "pytest-qatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-qatouch/)**::
 
 ```shell
 pip install pytest-pytestrail
@@ -79,7 +79,7 @@ qatouch-testrun-key (string):            The testrun key in qatouch project
 
 ## Issues
 
-If you encounter any problems, please **[file an issue](https://github.com/MohamedRaslan/pytest-pyqatouch/issues)** along with a detailed description.
+If you encounter any problems, please **[file an issue](https://github.com/MohamedRaslan/pytest-qatouch/issues)** along with a detailed description.
 
 ## Contributing
 

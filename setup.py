@@ -9,10 +9,10 @@ from setuptools import setup, find_packages
 HERE = pathlib.Path(__file__).parent
 
 PACKAGE_VERSION = "0.1.1"
-PACKAGE_NAME = "pytest-pyqatouch"
+PACKAGE_NAME = "pytest-qatouch"
 PACKAGE_AUTHOR = "Mohamed Raslan"
 PACKAGE_AUTHOR_EMAIL = "MohamedRaslanG@gmail.com"
-PACKAGE_REPO_URL = "https://github.com/MohamedRaslan/pytest-pyqatouch"
+PACKAGE_REPO_URL = "https://github.com/MohamedRaslan/pytest-qatouch"
 
 PACKAGE_DESCRIPTION = (
     "Pytest plugin for uploading test results to your QA Touch Testrun."
