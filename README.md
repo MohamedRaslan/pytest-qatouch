@@ -6,14 +6,14 @@ Pytest plugin for uploading test results to your QA Touch Testrun.
 
 - It only will upload the test results to the specified testrun in your Qatouch portal
 
-pytest-plugin testrail pytest-pytestrail
+
 
 ## Installation
 
 You can install "pytest-qatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-qatouch/)**::
 
 ```shell
-pip install pytest-pytestrail
+pip install pytest-qatouch
 ```
 
 ## Usage
@@ -46,7 +46,7 @@ from pytest_qatouch import qatouch
         pytest.param(1, 4, marks=qatouch.TR(9)),
     ],
 )
-def test_six(num1, num2):
+def test_sum(num1, num2):
     assert num1+num2 >= 10
 ```
 
