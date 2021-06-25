@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-import os
-import codecs
 import pathlib
 from setuptools import setup, find_packages
 
@@ -24,6 +21,10 @@ with open("README.md", "r", encoding="utf-8") as file:
 
 LONG_DESC_TYPE = "text/markdown"
 
+# Pakage and development requirements
+PKG_REQUIREMENTS = ["pytest>=6.2.0", "requests>=2.25.1"]
+DEV_REQUIREMENTS = ["bump2version>=1.0.1"]
+
 setup(
     name=PACKAGE_NAME,
     version=PACKAGE_VERSION,
@@ -35,7 +36,8 @@ setup(
     long_description_content_type=LONG_DESC_TYPE,
     py_modules=["pytest_pyqatouch"],
     python_requires=">=3.5",
-    install_requires=["pytest>=6.2.0", "requests>=2.25.1"],
+    install_requires=PKG_REQUIREMENTS,
+    extras_require={"dev": DEV_REQUIREMENTS},
     packages=find_packages("src"),
     package_dir={"": "src"},
     include_package_data=True,
