@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 HERE = pathlib.Path(__file__).parent
 
-PACKAGE_VERSION = "1.1.0-dev2"
+PACKAGE_VERSION = "1.1.0-dev3"
 PACKAGE_NAME = "pytest-qatouch"
 PACKAGE_AUTHOR = "Mohamed Raslan"
 PACKAGE_AUTHOR_EMAIL = "MohamedRaslanG@gmail.com"
