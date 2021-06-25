@@ -6,8 +6,6 @@ Pytest plugin for uploading test results to your QA Touch Testrun.
 
 - It only will upload the test results to the specified testrun in your Qatouch portal
 
-
-
 ## Installation
 
 You can install "pytest-qatouch" via **[pip](https://pypi.org/project/pip/)** from **[PyPI](https://pypi.org/project/pytest-qatouch/)**::
@@ -46,7 +44,7 @@ from pytest_qatouch import qatouch
         pytest.param(1, 4, marks=qatouch.TR(9)),
     ],
 )
-def test_sum(num1, num2):
+def test_sum_greater_than10(num1, num2):
     assert num1+num2 >= 10
 ```
 
@@ -84,3 +82,15 @@ If you encounter any problems, please **[file an issue](https://github.com/Moham
 ## Contributing
 
 Contributions are very welcome.
+
+## Development
+
+To start development,run your python environment then run the following commands:
+
+```shell
+# Update pip, wheel and setuptools
+python -m pip install -U pip wheel setuptools
+
+# Instal all the needed dependencies
+pip install -e .[dev]
+```
