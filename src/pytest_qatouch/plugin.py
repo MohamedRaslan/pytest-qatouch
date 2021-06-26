@@ -5,6 +5,7 @@ from .utils import QATOUCH_MARK, MissingQatouchData, ExpectedIntegerValue
 from .qatouch import QatouchTestResult
 
 __QATOUCH_TEST_RSESULT = None
+___Enable_PLUGIN = None
 
 
 def pytest_addoption(parser):
@@ -53,10 +54,13 @@ def pytest_addoption(parser):
 
 def pytest_configure(config):
     config.addinivalue_line("markers", f"{QATOUCH_MARK}(TR): Mark test")
-    if (
+    global ___Enable_PLUGIN
+    ___Enable_PLUGIN = (
         str(config.getoption("--qatouch")).lower() == "true"
         or str(config.getini("qatouch")).lower() == "true"
-    ):
+    )
+
+    if ___Enable_PLUGIN:
 
         def get_option(option: str):
             value = config.getoption("--" + option) or config.getini(option)
@@ -84,16 +88,15 @@ def pytest_runtest_makereport(item, call):
         if test_result.when == "call":
             __add_test(qa_marker, test_result)
 
-        elif (
-            test_result.when in ("setup", "teardown")
-            and test_result.outcome != "passed"
-        ):
+        elif test_result.when in ("setup", "teardown") and test_result.outcome != "passed":
             __add_test(qa_marker, test_result)
 
 
 def pytest_sessionfinish():
-    if __QATOUCH_TEST_RSESULT:
+    global __QATOUCH_TEST_RSESULT
+    if ___Enable_PLUGIN and __QATOUCH_TEST_RSESULT:
         __QATOUCH_TEST_RSESULT.push_results_to_qatouch()
+        __QATOUCH_TEST_RSESULT = None
 
 
 def __add_test(qa_marker, test_result):

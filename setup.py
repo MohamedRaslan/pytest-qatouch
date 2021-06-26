@@ -23,7 +23,7 @@ LONG_DESC_TYPE = "text/markdown"
 
 # Pakage and development requirements
 PKG_REQUIREMENTS = ["pytest>=6.2.0", "requests>=2.25.1"]
-DEV_REQUIREMENTS = ["bump2version>=1.0.1"]
+DEV_REQUIREMENTS = ["bump2version>=1.0.1", "pytest-cov>=2.12.1", "responses>=0.13.3"]
 
 setup(
     name=PACKAGE_NAME,
