@@ -1,3 +1,12 @@
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pytest-qatouch?logo=pypi)](https://pypi.org/project/pytest-qatouch) [![PyPI - Implementation](https://img.shields.io/pypi/implementation/pytest-qatouch)](https://pepy.tech/project/pytest-qatouch) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch) [![PyPI](https://img.shields.io/pypi/v/pytest-qatouch?color=blue&label=version&logo=python&logoColor=blue)](https://pypi.org/project/pytest-qatouch/) [![PyPI - Status](https://img.shields.io/pypi/status/pytest-qatouch?label=status)](https://pypi.org/project/pytest-qatouch/) [![PyPI - Wheel](https://img.shields.io/pypi/wheel/pytest-qatouch)](https://pypi.org/project/pytest-qatouch/#files) [![GitHub license](https://img.shields.io/github/license/MohamedRaslan/pytest-qatouch?color=blue)](https://github.com/MohamedRaslan/pytest-qatouch/blob/main/LICENSE) [![Downloads](https://static.pepy.tech/personalized-badge/pytest-qatouch?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads)](https://pepy.tech/project/pytest-qatouch) [![Downloads](https://pepy.tech/badge/pytest-qatouch/month)](https://pepy.tech/project/pytest-qatouch)
+
+[![GitHub stars](https://img.shields.io/github/stars/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/stargazers) [![GitHub forks](https://img.shields.io/github/forks/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/network) [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/commits/main) [![GitHub last commit](https://img.shields.io/github/last-commit/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/commits/main) [![GitHub issues](https://img.shields.io/github/issues/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/issues) [![GitHub Release Date](https://img.shields.io/github/release-date/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/releases)
+
+# fdgf
+
+[![Build Status](https://travis-ci.com/tolstislon/pytest-pytestrail.svg?branch=master)](https://travis-ci.com/tolstislon/pytest-pytestrail)
+[![codecov](https://codecov.io/gh/tolstislon/pytest-pytestrail/branch/master/graph/badge.svg)](https://codecov.io/gh/tolstislon/pytest-pytestrail)
+
 # pytest-qatouch
 
 Pytest plugin for uploading test results to your QA Touch Testrun.
@@ -44,7 +53,7 @@ from pytest_qatouch import qatouch
         pytest.param(1, 4, marks=qatouch.TR(9)),
     ],
 )
-def test_sum_greater_than10(num1, num2):
+def test_sum_greaterthan10(num1, num2):
     assert num1+num2 >= 10
 ```
 

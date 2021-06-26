@@ -1,0 +1,22 @@
+{
+    "python.pythonPath": "env\\Scripts\\python.exe",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.testing.pytestArgs": [
+        "--no-cov"
+    ],
+    "jupyter.debugJustMyCode": false,
+    "python.linting.mypyEnabled": true
+}
