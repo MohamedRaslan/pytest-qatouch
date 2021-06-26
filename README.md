@@ -48,7 +48,7 @@ from pytest_qatouch import qatouch
         pytest.param(1, 4, marks=qatouch.TR(9)),
     ],
 )
-def test_sum_greaterthan10(num1, num2):
+def test_sum_greater_than10(num1, num2):
     assert num1+num2 >= 10
 ```
 
