@@ -1,13 +1,14 @@
 name: Check Dispatcher
 
 on:
-    push:
-    workflow_dispatch:
-      inputs:
-        TESTING_ENV:
-          description: 'Choose the testing environment to run script on it [DEV or PROD]'
-          required: true
-          default: 'DEV'
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ MohamedRaslan-patch-1 ]
+  pull_request:
+    branches: [ MohamedRaslan-patch-1 ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
           
 jobs:
   tests:
