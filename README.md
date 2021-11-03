@@ -1,3 +1,7 @@
+[![PyPI](https://img.shields.io/pypi/v/pytest-qatouch?color=blue&label=version&logo=python&logoColor=blue)](https://pypi.org/project/pytest-qatouch/) [![Downloads](https://static.pepy.tech/personalized-badge/pytest-qatouch?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads)](https://pepy.tech/project/pytest-qatouch) [![Python package](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/pyplugin-test.yml/badge.svg?branch=main)](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/pyplugin-test.yml) [![codecov](https://codecov.io/gh/MohamedRaslan/pytest-qatouch/branch/main/graph/badge.svg?token=SD4WWNE48S)](https://codecov.io/gh/MohamedRaslan/pytest-qatouch)
+
+[![GitHub stars](https://img.shields.io/github/stars/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/stargazers) [![GitHub forks](https://img.shields.io/github/forks/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/network) [![GitHub issues](https://img.shields.io/github/issues/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/issues) [![GitHub Release Date](https://img.shields.io/github/release-date/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/releases) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch)
+
 # pytest-qatouch
 
 Pytest plugin for uploading test results to your QA Touch Testrun.
@@ -5,8 +9,6 @@ Pytest plugin for uploading test results to your QA Touch Testrun.
 ## Features
 
 - It only will upload the test results to the specified testrun in your Qatouch portal
-
-
 
 ## Installation
 
@@ -46,7 +48,7 @@ from pytest_qatouch import qatouch
         pytest.param(1, 4, marks=qatouch.TR(9)),
     ],
 )
-def test_sum(num1, num2):
+def test_sum_greater_than10(num1, num2):
     assert num1+num2 >= 10
 ```
 
@@ -84,3 +86,15 @@ If you encounter any problems, please **[file an issue](https://github.com/Moham
 ## Contributing
 
 Contributions are very welcome.
+
+## Development
+
+To start development,run your python environment then run the following commands:
+
+```shell
+# Update pip, wheel and setuptools
+python -m pip install -U pip wheel setuptools
+
+# Instal all the needed dependencies
+pip install -e .[dev]
+```
