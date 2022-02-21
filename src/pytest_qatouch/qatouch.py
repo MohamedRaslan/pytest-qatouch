@@ -31,7 +31,7 @@ class QatouchTestResult:
                 f"Expected to have one of the following status ['passed','skipped','failed'] but we got [{testcase_status}]"
             )
 
-    def push_results_to_qatouch(self) -> str:
+    def push_results_to_qatouch(self) -> None:
         request_url = QATOUCH_API_END_POINT + "/testRunResults/status/multiple"
         request_headers = {"domain": self.domain, "api-token": self.api_token}
         request_payload = {
@@ -41,9 +41,7 @@ class QatouchTestResult:
             "result": json.dumps(self.results),
         }
 
-        response = requests.patch(
-            request_url, headers=request_headers, params=request_payload
-        )
+        response = requests.patch(request_url, headers=request_headers, params=request_payload)
 
         if response.status_code == 200:
             if response.json().get("success"):
@@ -52,7 +50,7 @@ class QatouchTestResult:
                 )
             else:
                 raise QatouchRequestError(
-                    f"The qatouch request failed becase {[response.json().get('error_msg')]}"
+                    f"The qatouch request failed with {[response.json().get('error_msg')]}"
                 )
 
         else:
