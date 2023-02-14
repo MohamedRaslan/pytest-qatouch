@@ -1,3 +1,5 @@
+![Qatouch integration with pytest](.github/images/pytest-qatouch.png 'Qatouch integration with pytest')
+___
 [![PyPI](https://img.shields.io/pypi/v/pytest-qatouch?color=blue&label=version&logo=python&logoColor=blue)](https://pypi.org/project/pytest-qatouch/) [![Downloads](https://static.pepy.tech/personalized-badge/pytest-qatouch?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads)](https://pepy.tech/project/pytest-qatouch) [![Python package](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/pyplugin-test.yml/badge.svg?branch=main)](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/pyplugin-test.yml) [![codecov](https://codecov.io/gh/MohamedRaslan/pytest-qatouch/branch/main/graph/badge.svg?token=SD4WWNE48S)](https://codecov.io/gh/MohamedRaslan/pytest-qatouch)
 
 [![GitHub stars](https://img.shields.io/github/stars/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/stargazers) [![GitHub forks](https://img.shields.io/github/forks/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/network) [![GitHub issues](https://img.shields.io/github/issues/MohamedRaslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/issues) [![GitHub Release Date](https://img.shields.io/github/release-date/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch/releases) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mohamedraslan/pytest-qatouch)](https://github.com/MohamedRaslan/pytest-qatouch)
@@ -9,6 +11,7 @@ Pytest plugin for uploading test results to your QA Touch Testrun.
 ## Features
 
 - It only will upload the test results to the specified testrun in your Qatouch portal
+
 
 ## Installation
 
@@ -78,6 +81,11 @@ qatouch-testrun-key (string):            The testrun key in qatouch project
 --qatouch-project-key            The qatouch project key
 --qatouch-testrun-key            The testrun key in qatouch project
 ```
+
+## User guide
+For further documentation see **[wiki](https://github.com/MohamedRaslan/pytest-qatouch/wiki)** and checkout this video:
+[![Qatouch integration with pytest](.github/images/Thumbnail.png)](https://www.youtube.com/watch?v=tC_qbNr_M0k 'Qatouch integration with pytest')
+
 
 ## Issues
 

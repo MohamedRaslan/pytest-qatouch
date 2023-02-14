@@ -48,11 +48,11 @@ class QatouchTestResult:
         if response.status_code == 200:
             if response.json().get("success"):
                 print(
-                    f"\nThe qatouch request updated test run successfully {json.dumps(response.json())}"
+                    f"\nThe qatouch request updated the test run successfully with response : \n{json.dumps(response.json())}"
                 )
             else:
                 raise QatouchRequestError(
-                    f"The qatouch request failed becase {[response.json().get('error_msg')]}"
+                    f"The qatouch request failed because {[response.json().get('error_msg')]}"
                 )
 
         else:

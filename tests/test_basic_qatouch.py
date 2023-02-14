@@ -54,7 +54,7 @@ REQUEST_PAYLOAD = {
 }
 
 RESPONSE_BODY = json.dumps({"success": True, "msg": f"updated test run's status to {TESTRUN_KEY}"})
-STDOUT_MSG = f"The qatouch request updated test run successfully {RESPONSE_BODY}"
+STDOUT_MSG = f"The qatouch request updated the test run successfully with response : \n{RESPONSE_BODY}"
 
 
 def test_using_all_options(testdir, mock):
