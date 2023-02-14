@@ -40,7 +40,8 @@ setup(
     package_dir={"": "src"},
     include_package_data=True,
     project_urls={
-        "Issue Tracker": PACKAGE_REPO_URL + "/issues",
+        "Source": PACKAGE_REPO_URL,
+        "Tracker": PACKAGE_REPO_URL + "/issues",
     },
     keywords=[
         "qatouch",

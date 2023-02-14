@@ -19,7 +19,7 @@ def pytest_addoption(parser):
         option="--qatouch",
         action="store",
         dest="qatouch",
-        default="False",
+        default="Disabled",
         help="Enable the qatouch plugin (Set ['True', 'False'])",
     )
 
@@ -59,6 +59,10 @@ def pytest_configure(config):
         str(config.getoption("--qatouch")).lower() == "true"
         or str(config.getini("qatouch")).lower() == "true"
     )
+
+    if( str(config.getoption("--qatouch")).lower() == "false" ):
+        ___Enable_PLUGIN= False
+
 
     if ___Enable_PLUGIN:
 
