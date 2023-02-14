@@ -1,4 +1,4 @@
-![Qatouch integration with pytest](./doc/images/pytest-qatouch.png 'Qatouch integration with pytest')
+![Qatouch integration with pytest](https://github.com/MohamedRaslan/pytest-qatouch/tree/main/doc/images/pytest-qatouch.png 'Qatouch integration with pytest')
 ___
 [![PyPI](https://img.shields.io/pypi/v/pytest-qatouch?color=blue&label=version&logo=python&logoColor=blue)](https://pypi.org/project/pytest-qatouch/) [![Downloads](https://static.pepy.tech/personalized-badge/pytest-qatouch?period=total&units=international_system&left_color=grey&right_color=blue&left_text=downloads)](https://pepy.tech/project/pytest-qatouch)[![Python package](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/code-test.yml/badge.svg)](https://github.com/MohamedRaslan/pytest-qatouch/actions/workflows/code-test.yml) [![codecov](https://codecov.io/gh/MohamedRaslan/pytest-qatouch/branch/main/graph/badge.svg?token=SD4WWNE48S)](https://codecov.io/gh/MohamedRaslan/pytest-qatouch)
 
@@ -84,7 +84,7 @@ qatouch-testrun-key (string):            The testrun key in qatouch project
 
 ## User guide
 For further documentation see **[wiki](https://github.com/MohamedRaslan/pytest-qatouch/wiki)** and checkout this video:
-[![Qatouch integration with pytest](./doc/images/Thumbnail.png)](https://www.youtube.com/watch?v=tC_qbNr_M0k 'Qatouch integration with pytest')
+[![Qatouch integration with pytest](https://github.com/MohamedRaslan/pytest-qatouch/tree/main/doc/images/Thumbnail.png)](https://www.youtube.com/watch?v=tC_qbNr_M0k 'Qatouch integration with pytest')
 
 
 ## Issues
