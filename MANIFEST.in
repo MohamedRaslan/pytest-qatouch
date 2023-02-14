@@ -1,1 +1,1 @@
-recursive-include ./.github/images *
+recursive-include ./doc/images *
