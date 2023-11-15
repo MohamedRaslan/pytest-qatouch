@@ -1,22 +1,18 @@
 {
-    "python.pythonPath": "env\\Scripts\\python.exe",
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "python.linting.pycodestyleEnabled": false,
-    "python.linting.flake8Enabled": false,
-    "workbench.preferredHighContrastColorTheme": "Default Dark+",
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "python.envFile": "${workspaceFolder}/.env",
+    "black-formatter.args": [
         "--line-length",
         "100"
     ],
-    "python.envFile": "${workspaceFolder}/.env",
+    "workbench.preferredHighContrastColorTheme": "Default Dark+",
     "python.testing.pytestArgs": [
+        "tests",
         "--no-cov"
     ],
-    "jupyter.debugJustMyCode": false,
-    "python.linting.mypyEnabled": true
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
 }

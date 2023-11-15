@@ -1,4 +1,4 @@
-QATOUCH_API_END_POINT = "https://api.qatouch.com/api/v1"
+QATOUCH_API_END_POINT = "https://api.qatouch.com/api/v1/"
 
 # From https://github.com/gitdckap/cypress-qatouch-reporter/blob/main/dist/qatouch.js
 

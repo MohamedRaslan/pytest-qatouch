@@ -97,12 +97,12 @@ Contributions are very welcome.
 
 ## Development
 
-To start development,run your python environment then run the following commands:
+To start development, I am using **[pdm](https://pdm-project.org/)** so use the following commands to start:
 
 ```shell
-# Update pip, wheel and setuptools
-python -m pip install -U pip wheel setuptools
+# Create virtual environment
+pdm venv create 3.10
 
 # Instal all the needed dependencies
-pip install -e .[dev]
+pdm install -v --venv in-project
 ```
